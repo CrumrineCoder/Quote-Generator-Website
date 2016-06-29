@@ -1,0 +1,57 @@
+/* If iphone, everything becomes width 100% */
+
+.generateQuote {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.quote {
+  font-size: 30px;
+  /* Find out why this isn't changing the font size*/
+  text-indent: 50px;
+  background: #D4D8D1;
+  margin-bottom: 0px;
+}
+
+.signature {
+  font-size: 20px;
+  /* Find out why this isn't changing the font size*/
+  text-align: center;
+  background: #D4D8D1;
+  margin-bottom: 3%;
+}
+
+.social-media {
+  color: white;
+  background: black;
+  text-align: center;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  font-size: 3em;
+}
+
+
+/*
+960 generate quote becomes too small
+
+*/
+
+
+/*.body{
+  background: grey; 
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-bottom: 4%;
+}
+
+@media only screen and (max-width: 700px) {
+
+   body { font-size: 2em; }
+
+}
+
+/* MEDIA QUERY */
+
+@media screen and (max-width: 700px){
+  
+}
