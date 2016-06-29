@@ -1,0 +1,24 @@
+var quotes = ["It is one of the blessings of old friends that you can afford to be stupid with them.", "The haft of the arrow had been feathered with one of the eagle's own plumes. We often give our enemies the means of our own destruction", "We only live to discover beauty. All else is a form of waiting", "If the brain were so simple we could understand it, we would be so simple we couldn\'t.", "Once the rockets are up, who cares where they come down?", "To achieve great things, two things are needed: a plan, and not quite enough time", "If a man can safely drive an automobile and kiss a girl, he's not giving the kiss the attention it deserves.", "Ben, I want to say one word to you, just one word: plastics.", "A horse, a horse MY KINGDOM FOR A HORSE", "Do not wait to strike 'til the iron is hot; but make it hot by striking.", "The bureaucracy is expanding to meet the needs of the expanding bureaucracy.", "Nothing travels faster than light with the possible exception of bad news, which obeys its own special rules"];
+var signs = ["Ralph Waldo Emerson", "Aesop", "Kahlil Gibran", "Lyall Watson", "Tom Lehrer", "Leonard Bernstein", "Albert Einstein", "Buck Henry and Calder Willingham", "Shakespeare", "William Butler Yeats", "Oscard Wilde", "Douglas Adams"];
+var myIndex = 1;
+var secondIndex=1;
+var print = document.getElementById('quote');
+var print2 = document.getElementById('signs');
+print.innerHTML = quotes[0]; //Print first value of array right away.
+print2.innerHTML= signs[0];
+
+function nextQuote() {
+  print.innerHTML = quotes[myIndex];
+  myIndex = (myIndex + 1) % (quotes.length);
+  
+  print2.innerHTML = signs[secondIndex];
+  secondIndex = (secondIndex + 1) % (signs.length);
+};
+
+
+
+/*
+Make it random at start and then on
+Prevent overlap? 
+Understand how the fuck this works
+*/
