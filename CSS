@@ -1,36 +1,59 @@
 /* If iphone, everything becomes width 100% */
 
-.generateQuote {
-  margin-top: 2%;
-  margin-bottom: 2%;
+.container-fluid{
+  font-family: Droid-serif; 
 }
 
 .quote {
+  height: 190px; 
+  margin-top: 10px; 
+  padding-top: 10px; 
   font-size: 30px;
-  /* Find out why this isn't changing the font size*/
-  text-indent: 50px;
+  
+/*  text-indent: 50px;*/
   background: #D4D8D1;
   margin-bottom: 0px;
 }
 
+.q{
+   width: 50px; 
+  height: 50px;
+  display: block; 
+  margin-left: auto; 
+  margin-right: auto; 
+}
 .signature {
   font-size: 20px;
   /* Find out why this isn't changing the font size*/
   text-align: center;
   background: #D4D8D1;
-  margin-bottom: 3%;
+  border-bottom: 2px solid white;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.generateQuote {
+  font-size: 34px; 
+  margin-top: 2%;
+
 }
 
 .social-media {
+
   color: white;
   background: black;
   text-align: center;
-  padding-top: 1%;
-  padding-bottom: 1%;
-  font-size: 3em;
+  font-size: 24px;
+  border-bottom: 2px solid;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
 }
 
+.fa:hover{
+  
+  color: #7A7A7A;
 
+}
 /*
 960 generate quote becomes too small
 
