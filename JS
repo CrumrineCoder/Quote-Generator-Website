@@ -1,18 +1,156 @@
-var quotes = ["It is one of the blessings of old friends that you can afford to be stupid with them.", "The haft of the arrow had been feathered with one of the eagle's own plumes. We often give our enemies the means of our own destruction", "We only live to discover beauty. All else is a form of waiting", "If the brain were so simple we could understand it, we would be so simple we couldn\'t.", "Once the rockets are up, who cares where they come down?", "To achieve great things, two things are needed: a plan, and not quite enough time", "If a man can safely drive an automobile and kiss a girl, he's not giving the kiss the attention it deserves.", "Ben, I want to say one word to you, just one word: plastics.", "A horse, a horse MY KINGDOM FOR A HORSE", "Do not wait to strike 'til the iron is hot; but make it hot by striking.", "The bureaucracy is expanding to meet the needs of the expanding bureaucracy.", "Nothing travels faster than light with the possible exception of bad news, which obeys its own special rules"];
-var signs = ["Ralph Waldo Emerson", "Aesop", "Kahlil Gibran", "Lyall Watson", "Tom Lehrer", "Leonard Bernstein", "Albert Einstein", "Buck Henry and Calder Willingham", "Shakespeare", "William Butler Yeats", "Oscard Wilde", "Douglas Adams"];
+var quotes = [
+  
+"It is one of the blessings of old friends that you can afford to be stupid with them.",
+/* Ralph Waldo Emerson */
+"The haft of the arrow had been feathered with one of the eagle\'s own plumes. We often give enemies the means of our own destruction.",
+              
+ /* Aesop */             
+"We only live to discover beauty. All else is a form of waiting", 
+              
+/* Kahlil Gibran*/          
+"If the brain were so simple we could understand it, we would be so simple we couldn\'t.", 
+              
+/* Lyall Watson */         
+"Once the rockets are up, who cares where they come down?", 
+              
+ /* Tom Lehrer */             
+ "To achieve great things, two things are needed: a plan, and not quite enough time.", 
+              
+/* Leonard Berstein */             
+"If a man can safely drive an automobile and kiss a girl, he\'s not giving the kiss the attention it deserves.", 
+              
+/* Albert Einstein */                       
+"Ben, I want to say one word to you, just one word: plastics.", 
+              
+/* Buck Henry and Calder Willingham */   
+"A horse, a horse! My kingdom for a horse!",
+              
+/* Shakespeare */
+"Do not wait to strike \'til the iron is hot; but make it hot by striking.", 
+              
+/* William Butler Yeats */              
+"The bureaucracy is expanding to meet the needs of the expanding bureaucracy.", 
+              
+/* Oscar Wilde */      
+"Nothing travels faster than light with the possible exception of bad news, which obeys its own special rules",
+             
+/* Douglas Adams */
+   
+ "Beep... beep... beep... beep..", 
+  
+/* Leonard Nimoy rip rip rip */
+  
+  "Their rising all at once was as the sound of a thunder heard remote.",
+  
+ /* Milton */
+  
+  "So teach us to number our days, so that we may apply our hearts unto wisdom.",
+  
+  /* The Bible, Psalms, 90:12 */
+  
+  "Who pulleth out this sword of this stone and anvil, is rightwise king born of all England",
+  
+  /* Malory */
+  
+  "Computers are like Old Testament gods: lots of rules and no mercy.",
+  
+  /*Joseph Cambell */
+  
+  "Compound interest is the most powerful force in the universe.",
+  
+  /* Albert Einstein */
+  
+  "How happy are those whose walls already rise!", 
+  
+ /* Virgil */
+  
+  "Measure what is measurable, and make measurable what is not so.", 
+  
+  /* Galileo */
+  
+  "The whole country was tied together by radio. We all experienced the same heroes and comedians and singers. They were giants.", 
+  
+  /* Woody Allen */
+  
+  "Nothing is particularly hard if you divide it into small jobs.",
+  
+  /* Henry Ford */
+  
+  "Pale Death beats equally at the poor man's gate and at the palaces of kings.",
+  
+  /* Horace */
+  
+  "In preparing for battle I have always found that plans are useless, but planning is indispensable."
+  
+ /* Dwight D. Eisenhower */
+];
+var signs = [
+  
+"Ralph Waldo Emerson", 
+  
+"Aesop", 
+  
+"Kahlil Gibran", 
+  
+"Lyall Watson", 
+  
+"Tom Lehrer", 
+  
+"Leonard Bernstein", 
+  
+"Albert Einstein", 
+  
+"Buck Henry and Calder Willingham",
+  
+"Shakespeare", 
+  
+"William Butler Yeats", 
+  
+"Oscar Wilde", 
+  
+"Douglas Adams",
+
+"Leonard Nimoy",
+
+"Milton",
+
+"The Bible, Psalms, 90:12", 
+
+"Malory",
+
+"Joseph Campbell",
+
+"Albert Einstein",
+
+"Virgil",
+
+"Galileo",
+
+"Woody Allen",
+
+"Henry Ford",
+
+"Horace",
+
+"My DM / Dwight D. Eisenhower"];
 var myIndex = 1;
 var secondIndex=1;
 var print = document.getElementById('quote');
 var print2 = document.getElementById('signs');
-print.innerHTML = quotes[0]; //Print first value of array right away.
-print2.innerHTML= signs[0];
+myIndex = Math.floor(Math.random() * quotes.length-1) + 1; 
+print.innerHTML = quotes[myIndex]; //Print first value of array right away.
+print2.innerHTML= signs[myIndex];
 
 function nextQuote() {
+  myIndex = Math.floor(Math.random() * quotes.length-1) + 1;  
   print.innerHTML = quotes[myIndex];
-  myIndex = (myIndex + 1) % (quotes.length);
-  
-  print2.innerHTML = signs[secondIndex];
-  secondIndex = (secondIndex + 1) % (signs.length);
+  print2.innerHTML = signs[myIndex];
+ 
+ /* myIndex = (myIndex + 1) % (quotes.length);
+  */
+
+
+ /* secondIndex = (secondIndex + 1) % (signs.length);*/
 };
 
 
@@ -22,3 +160,11 @@ Make it random at start and then on
 Prevent overlap? 
 Understand how the fuck this works
 */
+
+var tButton = document.getElementsByClassName('twitter-btn')[0];
+
+function tweet() {
+	window.open('https://twitter.com/intent/tweet?&text=' + quotes[myIndex] + " ~ " + signs[myIndex] );   
+}
+
+tButton.addEventListener('click', tweet, false);
