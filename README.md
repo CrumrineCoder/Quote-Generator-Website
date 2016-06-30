@@ -7,3 +7,4 @@ Pending Changes:
 - Styling, perhaps a Civ theme since I use mostly quotes from that
 - "True" randomness
 - Share on Facebook and Tumblr feature
+- Comments that I can read and understand 6 months from now
