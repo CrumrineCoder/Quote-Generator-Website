@@ -1,170 +1,108 @@
 var quotes = [
-  
-"It is one of the blessings of old friends that you can afford to be stupid with them.",
-/* Ralph Waldo Emerson */
-"The haft of the arrow had been feathered with one of the eagle\'s own plumes. We often give enemies the means of our own destruction.",
-              
- /* Aesop */             
-"We only live to discover beauty. All else is a form of waiting", 
-              
-/* Kahlil Gibran*/          
-"If the brain were so simple we could understand it, we would be so simple we couldn\'t.", 
-              
-/* Lyall Watson */         
-"Once the rockets are up, who cares where they come down?", 
-              
- /* Tom Lehrer */             
- "To achieve great things, two things are needed: a plan, and not quite enough time.", 
-              
-/* Leonard Berstein */             
-"If a man can safely drive an automobile and kiss a girl, he\'s not giving the kiss the attention it deserves.", 
-              
-/* Albert Einstein */                       
-"Ben, I want to say one word to you, just one word: plastics.", 
-              
-/* Buck Henry and Calder Willingham */   
-"A horse, a horse! My kingdom for a horse!",
-              
-/* Shakespeare */
-"Do not wait to strike \'til the iron is hot; but make it hot by striking.", 
-              
-/* William Butler Yeats */              
-"The bureaucracy is expanding to meet the needs of the expanding bureaucracy.", 
-              
-/* Oscar Wilde */      
-"Nothing travels faster than light with the possible exception of bad news, which obeys its own special rules",
-             
-/* Douglas Adams */
-   
- "Beep... beep... beep... beep..", 
-  
-/* Leonard Nimoy rip rip rip */
-  
-  "Their rising all at once was as the sound of a thunder heard remote.",
-  
- /* Milton */
-  
-  "So teach us to number our days, so that we may apply our hearts unto wisdom.",
-  
-  /* The Bible, Psalms, 90:12 */
-  
-  "Who pulleth out this sword of this stone and anvil, is rightwise king born of all England",
-  
-  /* Malory */
-  
-  "Computers are like Old Testament gods: lots of rules and no mercy.",
-  
-  /*Joseph Cambell */
-  
-  "Compound interest is the most powerful force in the universe.",
-  
-  /* Albert Einstein */
-  
-  "How happy are those whose walls already rise!", 
-  
- /* Virgil */
-  
-  "Measure what is measurable, and make measurable what is not so.", 
-  
-  /* Galileo */
-  
-  "The whole country was tied together by radio. We all experienced the same heroes and comedians and singers. They were giants.", 
-  
-  /* Woody Allen */
-  
-  "Nothing is particularly hard if you divide it into small jobs.",
-  
-  /* Henry Ford */
-  
-  "Pale Death beats equally at the poor man's gate and at the palaces of kings.",
-  
-  /* Horace */
-  
-  "In preparing for battle I have always found that plans are useless, but planning is indispensable."
-  
- /* Dwight D. Eisenhower */
+
+  {
+    author: "Ralph Waldo Emerson",
+    quote: "It is one of the blessings of old friends that you can afford to be stupid with them."
+  }, {
+    author: "Aesop",
+    quote: "The haft of the arrow had been feathered with one of the eagle\'s own plumes. We often give enemies the means of our own destruction."
+  }, {
+    author: "Kahlil Gibran",
+    quote: "We only live to discover beauty. All else is a form of waiting"
+  }, {
+    author: "Lyall Watson",
+    quote: "If the brain were so simple we could understand it, we would be so simple we couldn\'t."
+  }, {
+    author: "Tom Lehrer",
+    quote: "Once the rockets are up, who cares where they come down?"
+  }, {
+    author: "Leonard Berstein",
+    quote: "To achieve great things, two things are needed: a plan, and not quite enough time."
+  }, {
+    author: "Ralph Waldo Emerson",
+    quote: "It is one of the blessings of old friends that you can afford to be stupid with them."
+  }, {
+    author: "Albert Einstein",
+    quote: "If a man can safely drive an automobile and kiss a girl, he\'s not giving the kiss the attention it deserves."
+  }, {
+    author: "Shakespeare",
+    quote: "A Horse! A Horse! My Kingdom for a Horse!"
+  }, {
+    author: " Buck Henry and Calder Willingham",
+    quote: "Ben, I want to say one word to you, just one word: plastics."
+  }, {
+    author: "William Butler Yeats",
+    quote: "Do not wait to strike \'til the iron is hot; but make it hot by striking."
+  }, {
+    author: "Oscar Wilde",
+    quote: "The bureaucracy is expanding to meet the needs of the expanding bureaucracy."
+  }, {
+    author: "Douglass Adams",
+    quote: "Nothing travels faster than light with the possible exception of bad news, which obeys its own special rules"
+  }, {
+    author: "Milton",
+    quote: "Their rising all at once was as the sound of a thunder heard remote."
+  }, {
+    author: "Leonard Nimoy",
+    quote: "Beep... beep... beep... beep.."
+  }, {
+    author: "The Bible, Psalms, 90:12",
+    quote: "So teach us to number our days, so that we may apply our hearts unto wisdom."
+  }, {
+    author: "Malory",
+    quote: "Who pulleth out this sword of this stone and anvil, is rightwise king born of all England"
+  }, {
+    author: "Albert Einstein",
+    quote: "Compound interest is the most powerful force in the universe."
+  }, {
+    author: "Virgil",
+    quote: "How happy are those whose walls already rise!"
+  }, {
+    author: "Galileo",
+    quote: "Measure what is measurable, and make measurable what is not so."
+  }, {
+    author: "Woody Allen",
+    quote: "The whole country was tied together by radio. We all experienced the same heroes and comedians and singers. They were giants."
+  }, {
+    author: "Henry Ford",
+    quote: "Nothing is particularly hard if you divide it into small jobs."
+  }, {
+    author: "Horace",
+    quote: "Pale Death beats equally at the poor man's gate and at the palaces of kings."
+  }, {
+    author: "My DM and Dwight D. Eisenhower",
+    quote: "In preparing for battle I have always found that plans are useless, but planning is indispensable."
+  }
+
 ];
-var signs = [
-  
-"Ralph Waldo Emerson", 
-  
-"Aesop", 
-  
-"Kahlil Gibran", 
-  
-"Lyall Watson", 
-  
-"Tom Lehrer", 
-  
-"Leonard Bernstein", 
-  
-"Albert Einstein", 
-  
-"Buck Henry and Calder Willingham",
-  
-"Shakespeare", 
-  
-"William Butler Yeats", 
-  
-"Oscar Wilde", 
-  
-"Douglas Adams",
 
-"Leonard Nimoy",
-
-"Milton",
-
-"The Bible, Psalms, 90:12", 
-
-"Malory",
-
-"Joseph Campbell",
-
-"Albert Einstein",
-
-"Virgil",
-
-"Galileo",
-
-"Woody Allen",
-
-"Henry Ford",
-
-"Horace",
-
-"My DM / Dwight D. Eisenhower"];
-var myIndex = 1;
-var secondIndex=1;
 var print = document.getElementById('quote');
 var print2 = document.getElementById('signs');
-myIndex = Math.floor(Math.random() * quotes.length-1) + 1; 
-print.innerHTML = quotes[myIndex]; //Print first value of array right away.
-print2.innerHTML= signs[myIndex];
 
 function nextQuote() {
-  myIndex = Math.floor(Math.random() * quotes.length-1) + 1;  
-  print.innerHTML = quotes[myIndex];
-  print2.innerHTML = signs[myIndex];
- 
- /* myIndex = (myIndex + 1) % (quotes.length);
-  */
 
+  if (quotes.length == 0) {
+    noMoreQuotes()
+  }
+  myIndex = Math.floor(Math.random() * quotes.length - 1) + 1;
+  print.innerHTML = quotes[myIndex].quote;
+  print2.innerHTML = quotes[myIndex].author;
+  quotes = quotes.slice(0, myIndex).concat(quotes.slice(myIndex + 1, quotes.length))
+}
 
- /* secondIndex = (secondIndex + 1) % (signs.length);*/
-};
+function noMoreQuotes() {
+  print.innerHTML = "You have read all the quotes available"
+  print2.innerHTML = "Thanks for checking out my pen!"
+  document.getElementById('quoteGen').style = "display: none;"
+  document.getElementById("test").style.display = "none";
+}
 
-
-
-/*
-Make it random at start and then on
-Prevent overlap? 
-Understand how the fuck this works
-*/
+nextQuote()
 
 var tButton = document.getElementsByClassName('twitter-btn')[0];
 
 function tweet() {
-	window.open('https://twitter.com/intent/tweet?&text=' + quotes[myIndex] + " ~ " + signs[myIndex] );   
+  window.open('https://twitter.com/intent/tweet?&text=' + print.innerHTML + " ~ " + print2.innerHTML);
 }
 
 tButton.addEventListener('click', tweet, false);
