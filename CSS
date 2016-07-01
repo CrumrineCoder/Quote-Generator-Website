@@ -1,27 +1,27 @@
 /* If iphone, everything becomes width 100% */
 
-.container-fluid{
-  font-family: Droid-serif; 
+.container-fluid {
+  font-family: Droid-serif;
 }
 
 .quote {
-  height: 190px; 
-  margin-top: 10px; 
-  padding-top: 10px; 
+  height: 190px;
+  margin-top: 10px;
+  padding-top: 10px;
   font-size: 30px;
-  
-/*  text-indent: 50px;*/
+  /*  text-indent: 50px;*/
   background: #D4D8D1;
   margin-bottom: 0px;
 }
 
-.q{
-   width: 50px; 
+.q {
+  width: 50px;
   height: 50px;
-  display: block; 
-  margin-left: auto; 
-  margin-right: auto; 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 .signature {
   font-size: 20px;
   /* Find out why this isn't changing the font size*/
@@ -33,13 +33,11 @@
 }
 
 .generateQuote {
-  font-size: 34px; 
+  font-size: 34px;
   margin-top: 2%;
-
 }
 
 .social-media {
-
   color: white;
   background: black;
   text-align: center;
@@ -49,11 +47,11 @@
   border-bottom-right-radius: 25px;
 }
 
-.fa:hover{
-  
+.fa:hover {
   color: #7A7A7A;
-
 }
+
+
 /*
 960 generate quote becomes too small
 
@@ -75,6 +73,4 @@
 
 /* MEDIA QUERY */
 
-@media screen and (max-width: 700px){
-  
-}
+@media screen and (max-width: 700px) {}
