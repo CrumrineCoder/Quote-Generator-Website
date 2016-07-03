@@ -1,3 +1,5 @@
+/* Array of objects with the author of the quote and the quote itself */
+
 var quotes = [
 
   {
@@ -76,14 +78,18 @@ var quotes = [
 
 ];
 
+/* Define two variables to act as the divs for the quote area and signature area */
 var print = document.getElementById('quote');
 var print2 = document.getElementById('signs');
 
 function nextQuote() {
 
+  /* If there are no more quotes left in the array, do this instead */
   if (quotes.length == 0) {
     noMoreQuotes()
   }
+
+  /* Generates a random variable to act as the designator of which quote to present */
   myIndex = Math.floor(Math.random() * quotes.length - 1) + 1;
   print.innerHTML = quotes[myIndex].quote;
   print2.innerHTML = quotes[myIndex].author;
@@ -99,10 +105,22 @@ function noMoreQuotes() {
 
 nextQuote()
 
+/* tBUtton is equal to the div area of the twitter button bar */
 var tButton = document.getElementsByClassName('twitter-btn')[0];
 
 function tweet() {
+
+  /* When tweet() is called, a window opens with a tweet of the quote */
   window.open('https://twitter.com/intent/tweet?&text=' + print.innerHTML + " ~ " + print2.innerHTML);
 }
 
+/* When the button is clicked on, tweets happen */
 tButton.addEventListener('click', tweet, false);
+
+/* When the user presses the spacebar, nextQuote() runs */
+
+document.body.onkeyup = function(e) {
+  if (e.keyCode == 32) {
+    nextQuote();
+  }
+}
