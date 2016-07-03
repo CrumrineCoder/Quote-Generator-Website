@@ -7,7 +7,7 @@
 -->
 <div class="container-fluid">
   <!-- Generate New Quote Button 
-*Add breakpoints to change the font size
+*
 
   -->
   <div class="body">
@@ -21,7 +21,7 @@
 
     <div class="row">
       <div class="col-xs-2"></div>
-      <!--<div class="col-xs-1"</div> -->
+
       <div class="col-xs-8 quote">
         <img src="http://i.imgur.com/D0a3HLD.png" class="q">
         <div id="quote"></div>
@@ -40,13 +40,24 @@
 
     </div>
 
+    <!-- Generate New Quote Button 
+* 
+
+-->
+
     <div class="row">
-      <div class="col-xs-4"></div>
+      <div class="breakpoint_quote">
+        <div class="col-xs-4"></div>
+      </div>
       <div class="col-xs-4 text-center generateQuote btn btn-primary" id="quoteGen">
         <div onclick="nextQuote()">Generate New Quote</div>
+        <div style="font-size: 20px"> (Spacebar or click) </div>
       </div>
       <!-- Fix this clusterfuck -->
-      <div class="col-xs-4"></div>
+      <div class="breakpoint_quote">
+        <div class="col-xs-4">
+        </div>
+      </div>
 
     </div>
 
@@ -57,8 +68,8 @@
 
     <div class="row">
       <div class="col-xs-5"></div>
-      <div class="col-xs-2 social-media" id="test">
-        <div class="fa fa-twitter twitter-btn"> </div>
+      <div class="col-xs-2 social-media twitter-btn" id="test">
+        <div class="fa fa-twitter"> </div>
         <!--    <btn class="fa fa-facebook "></btn> -->
       </div>
       <div class="col-xs-5"></div>
