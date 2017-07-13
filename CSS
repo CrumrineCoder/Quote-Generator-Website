@@ -1,25 +1,62 @@
 /* If iphone, everything becomes width 100% */
 
+
+.nav{
+  background: black; 
+  text-align: center;
+vertical-align: middle;
+  padding: 1%; 
+}
+#q-gen{
+  color: white;
+   text-indent: 50px; 
+  
+}
+
+#nic{
+  color: #40CC33;
+  text-decoration: none; 
+}
+#nic:hover{
+  color: #4A9943;
+}
 .container-fluid {
   font-family: Droid-serif;
 }
 
 .quote {
-  height: 190px;
+  height: 140px;
   margin-top: 10px;
   padding-top: 10px;
+  padding-bottom: 1%; 
   font-size: 30px;
   /*  text-indent: 50px;*/
   background: #D4D8D1;
   margin-bottom: 0px;
+  text-align: center;
+
 }
+
+
 /* q affects the " png */
-.q { 
+
+.quote-sign-top {
   width: 50px;
   height: 50px;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  float: right; 
+
+}
+
+.quote-sign-bottom {
+  width: 50px;
+  height: 50px;
+  display: block;
+  /* Moves the image down 100 pixels */
+  position: relative; 
+  top: 100px; 
+
+
 }
 
 .signature {
@@ -41,7 +78,7 @@
   color: white;
   background: black;
   text-align: center;
-  font-size: 24px;
+  font-size: 30px;
   border-bottom: 2px solid;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
@@ -81,16 +118,28 @@
   .generateQuote {
     font-size: 29px;
   }
+  .quote{
+    font-size: 25px; 
+  }
+}
+@media screen and (max-width: 850px) {
+  .generateQuote {
+    font-size: 24px;
+  }
+  .quote{
+    font-size: 20px; 
+  }
 }
 
-@media screen and (max-width: 820px) {
+
+@media screen and (max-width: 750px) {
   .generateQuote {
     width: 100%;
     margin: 0 auto;
   }
   .breakpoint_quote {
     width: 0%;
-    margin: 0 auto;
+    margin: 15px 0 0 0;
   }
   .col-xs-5 {
     width: 0%;
@@ -110,9 +159,21 @@
     border-bottom: none;
     width: 100%;
   }
-  social-media{
-    margin: 0 auto; 
-    border: none; 
-    
+  .social-media {
+    margin: 0 auto;
+    border: none;
+  }
+  [class*="col-"] {
+    min-height: 0px;
+  }
+  .nav{
+    text-align: center; 
+    text-indent: 0px; 
+  }
+  .quote-sign-top{
+    display: none; 
+  }
+  .quote-sign-bottom{
+    display: none; 
   }
 }
