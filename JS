@@ -20,10 +20,8 @@ var quotes = [
   }, {
     author: "Leonard Berstein",
     quote: "To achieve great things, two things are needed: a plan, and not quite enough time."
-  }, {
-    author: "Ralph Waldo Emerson",
-    quote: "It is one of the blessings of old friends that you can afford to be stupid with them."
-  }, {
+  }, 
+  {
     author: "Albert Einstein",
     quote: "If a man can safely drive an automobile and kiss a girl, he\'s not giving the kiss the attention it deserves."
   }, {
@@ -98,7 +96,7 @@ function nextQuote() {
 
 function noMoreQuotes() {
   print.innerHTML = "You have read all the quotes available"
-  print2.innerHTML = "Thanks for checking out my pen!"
+  print2.innerHTML = "Nic"
   document.getElementById('quoteGen').style = "display: none;"
   document.getElementById("test").style.display = "none";
 }
